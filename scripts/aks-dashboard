@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+
+az aks get-credentials --resource-group MineSupport --name MineSupport
+
+az aks browse --resource-group MineSupport --name MineSupport
