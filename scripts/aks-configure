@@ -17,5 +17,8 @@ az role assignment create --assignee $CLIENT_ID --role acrpull --scope $ACR_ID
 # install helm
 helm init --history-max 200
 
+# wait for tiller
+sleep 30
+
 # install NGINX
-helm install stable/nginx-ingress
+helm install --name nginx-ingress stable/nginx-ingress
