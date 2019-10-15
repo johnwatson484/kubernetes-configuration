@@ -3,6 +3,9 @@
 # install helm
 helm init --history-max 200
 
+# wait for tiller
+sleep 30
+
 # install NGINX
 helm install stable/nginx-ingress
 
