@@ -7,7 +7,7 @@ helm init --history-max 200
 sleep 30
 
 # install NGINX
-helm install stable/nginx-ingress
+helm upgrade --install nginx stable/nginx-ingress
 
 # install dashboard
 kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta4/aio/deploy/recommended.yaml
