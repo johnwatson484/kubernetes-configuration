@@ -1,11 +1,5 @@
 #!/usr/bin/env sh
 
-# install helm
-helm init --history-max 200
-
-# wait for tiller
-sleep 30
-
 # install NGINX
 helm upgrade --install nginx stable/nginx-ingress
 
